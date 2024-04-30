@@ -1,7 +1,7 @@
 import React from "react";
 
 function BookDetail() {
-	return <div>BookDetail</div>;
+	return <div className="">BookDetail</div>;
 }
 
 export default BookDetail;
