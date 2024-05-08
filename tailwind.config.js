@@ -17,6 +17,12 @@ module.exports = {
 		fontFamily: {
 			pop: ["Poppins"],
 		},
+		minHeight:{
+			'460':'460px'
+		},
+		maxHeight:{
+			'460':'460px'
+		}
 	},
 	plugins: [],
 };

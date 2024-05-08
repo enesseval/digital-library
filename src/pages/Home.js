@@ -8,7 +8,7 @@ function Home() {
 
 	const getBooks = async (e) => {
 		e.preventDefault();
-		setData((await axios(`https://openlibrary.org/search.json?title=${searchVal}&fields=key,title,cover_i&limit=5`)).data.docs);
+		setData((await axios(`https://openlibrary.org/search.json?title=${searchVal}&fields=key,title,cover_i&limit=15`)).data.docs);
 	};
 
 	console.log(data);
@@ -29,7 +29,7 @@ function Home() {
 				</div>
 			</form>
 			{data && (
-				<div className="bg-custom-colorTwo100 rounded-lg my-3 grid gap-1 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+				<div className="bg-custom-colorTwo100 rounded-sm my-3 grid justify-items-center gap-1 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
 					{data.map((book) => (
 						<BookCard key={book.cover_i} book={book} />
 					))}

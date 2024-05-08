@@ -4,8 +4,27 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
 
+.truncated-title-info {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%); 
+    padding: 5px;
+    background-color: #DAD7CD;
+    border: 1px solid black;
+    z-index: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border-radius: 15px;
+}
+
 @layer components {
     .wrapper-container {
         @apply max-w-7xl mx-auto px-2
+    }
+
+    .relative:hover .truncated-title::after{
+        @apply truncated-title-info;
+        content: attr(data-title); 
     }
 }
