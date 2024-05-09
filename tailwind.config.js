@@ -22,6 +22,10 @@ module.exports = {
 		},
 		maxHeight:{
 			'460':'460px'
+		},
+		boxShadow:{
+			"book-shadow": "rgba(0, 0, 0, 0.15) 0px 5px 15px 0px",
+			"book-shadow-hover" : "rgba(0, 0, 0, 0.35) 0px 5px 15px 0px"
 		}
 	},
 	plugins: [],

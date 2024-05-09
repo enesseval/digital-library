@@ -1,7 +1,14 @@
-import React from "react";
+import React from 'react'
+import { useParams } from 'react-router-dom'
 
 function BookDetail() {
-	return <div className="">BookDetail</div>;
+	const {id} =useParams()
+	console.log(id);
+  return (
+	<div>{id}</div>
+	
+  )
 }
 
-export default BookDetail;
+
+export default BookDetail
