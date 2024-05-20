@@ -27,7 +27,7 @@ function Home() {
 				</div>
 			</form>
 			{data && (
-				<div className="rounded-sm my-3 grid justify-items-center gap-12 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+				<div className="rounded-sm my-3 grid justify-items-center gap-12 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
 					{data.map((book) => (
 						<BookCard key={book.key} book={book} />
 					))}

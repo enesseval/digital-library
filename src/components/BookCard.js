@@ -23,8 +23,9 @@ function BookCard({ book }) {
 	}, [book.cover_i]);
 
 	return (
-		<Link to={`/detail/${book.key.replace("/works/","")}`}>
+		
 		<div className="cursor-pointer flex flex-col justify-between px-12 py-8 rounded-md bg-white transition-all duration-300 ease-in-out shadow-book-shadow hover:shadow-book-shadow-hover">
+			<Link to={`/detail/${book.key.replace("/works/","")}`}>
 			<div>
 				<img className="mx-auto max-w-48" src={coverUrl} alt={`${book.title} cover`} />
 			</div>
@@ -35,8 +36,8 @@ function BookCard({ book }) {
 				</div>
 				
 			</div>
+			</Link>
 		</div>
-		</Link>
 	);
 }
 
